@@ -132,7 +132,7 @@ void HelloWorld::addTarget()
 	target->setTag(1);
 	_targets->addObject(target);
 	
-    target->runAction(CCSequence::actions(actionMove, actionMoveDone));
+    target->runAction(CCSequence::actions(actionMove, actionMoveDone, NULL));
 }
 
 void HelloWorld::spriteMoveFinished(CCNode* sender)
